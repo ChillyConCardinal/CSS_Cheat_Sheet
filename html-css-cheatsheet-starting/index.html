@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#color">Color and Background Colour</a></li>
+            <li><a href="#padding">Padding</a></li>
+            <li><a href="#margin">Margin</a></li>
+            <li><a href="#border">Border</a></li>
+        </ul>
+    </header>
+    <h1>Common CSS Property Documentation</h1>
+    <div class="property color" id="color">
+        <h3>Color and Background-color</h3>
+        <table>
+            <tr>
+                <th>Property Value</th>
+                <th>Purpose</th>
+                <th>Examples</th>
+            </tr>
+            <tr>
+                <td><p>Named color</p></td>
+                <td><p>color keywords are used to define a color, a list of color keywords can be found <a href="">here.</a></p></td>
+                <td><p><span class="code">color: red;</span></p><p><span class="code">background-color: red;</span></p></td>
+            </tr>
+            <tr>
+                <td><p>hex color</p></td>
+                <td><p>use hexadecimal values to set color</p></td>
+                <td><p><span class="code">color: #fcf403;</span></p><p><span class="code">background-color: #fcf403;</span></p></td>
+            </tr>
+            <tr>
+                <td><p>rgb color</p></td>
+                <td><p>Set foreground or background color with red green and blue channels</p></td>
+                <td><p><span class="code">color: rgb(0-255,0-255,0-255);</span></p><p><span class="code">background-color: rgb(0-255,0-255,0-255);</span></p></td>
+            </tr>
+            <tr>
+                <td><p>hsl color</p></td>
+                <td><p>Set foreground or background color with hue, saturation and lightness values</p></td>
+                <td><p><span class="code">color: hsl(0-360,0-100%,0-100%);</span></p><p><span class="code">background-color: hsl(0-360, 0-100%, 0-100%);</span></p></td>
+            </tr>
+            <tr>
+                <td><p>alpha/opacity</p></td>
+                <td><p>Sets the opacity value of a color, can be used with hex, rgb or hsl</p><p>Note: Cannot be used on named colors</p></td>
+                <td><p><span class="code">color: #fcf403ff;</span></p><p><span class="code">color: rgba(0-255,0-255,0-255,0-1);</span></p><p><span class="code">color: hsla(0-360,0-100%,0-100%,0-1);</span></p></td>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <h2>Box Model Properties</h2>
+        <img src="https://miro.medium.com/max/408/1*sKnLrT1TtqWDZg7GWoBCow.png">
+        <div class="padding" id="padding">
+            <h3>Padding</h3>
+            <table>
+                <tr>
+                    <th>Property Value</th>
+                    <th>Purpose</th>
+                    <th>Examples</th>
+                </tr>
+                <tr>
+                    <td>1 value</td>
+                    <td>Sets padding equal on all sides of the content</td>
+                    <td><p class="code">padding: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>2 values</td>
+                    <td>Order: top and bottom, left and right</td>
+                    <td><p class="code">padding: 10px 30px;</p></td>
+                </tr>
+                <tr>
+                    <td>3 values</td>
+                    <td>Order: top, right and left, bottom</td>
+                    <td><p class="code">padding 10px 30px 40px;</p></td>
+                </tr>
+                <tr>
+                    <td>4 values</td>
+                    <td>Order: top, right, bottom, left</td>
+                    <td><p class="code">padding 10px 30px 40px 50px;</p></td>
+                </tr>
+                <tr>
+                    <td>padding-top</td>
+                    <td>Sets padding on the top only</td>
+                    <td><p class="code">padding-top: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>padding-right</td>
+                    <td>Sets padding on the right only</td>
+                    <td><p class="code">padding-right: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>padding-bottom</td>
+                    <td>Sets padding on the bottom only</td>
+                    <td><p class="code">padding-bottom: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>padding-left</td>
+                    <td>Sets padding on the left only</td>
+                    <td><p class="code">padding-left: 10px;</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="margin" id="margin">
+            <h3>Margin</h3>
+            <table>
+                <tr>
+                    <th>Property Value</th>
+                    <th>Purpose</th>
+                    <th>Examples</th>
+                </tr>
+                <tr>
+                    <td>1 value</td>
+                    <td>Sets margin equal on all sides of the content</td>
+                    <td><p class="code">margin: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>2 values</td>
+                    <td>Order: top and bottom, left and right</td>
+                    <td><p class="code">margin: 10px 30px;</p></td>
+                </tr>
+                <tr>
+                    <td>3 values</td>
+                    <td>Order: top, right and left, bottom</td>
+                    <td><p class="code">margin 10px 30px 40px;</p></td>
+                </tr>
+                <tr>
+                    <td>4 values</td>
+                    <td>Order: top, right, bottom, left</td>
+                    <td><p class="code">margin 10px 30px 40px 50px;</p></td>
+                </tr>
+                <tr>
+                    <td>margin-top</td>
+                    <td>Sets margin on the top only</td>
+                    <td><p class="code">margin-top: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>margin-right</td>
+                    <td>Sets margin on the right only</td>
+                    <td><p class="code">margin-right: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>margin-bottom</td>
+                    <td>Sets margin on the bottom only</td>
+                    <td><p class="code">margin-bottom: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>margin-left</td>
+                    <td>Sets margin on the left only</td>
+                    <td><p class="code">margin-left: 10px;</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="border" id="border">
+            <h3>Border</h3>
+            <table>
+                <tr>
+                    <th>Property Value</th>
+                    <th>Purpose</th>
+                    <th>Examples</th>
+                </tr>
+                <tr>
+                    <td>Shorthand</td>
+                    <td>Used to set width, style and colour at once</td>
+                    <td><p class="code">border: 5px solid red;</p></td>
+                </tr>
+                <tr>
+                    <td>border-width</td>
+                    <td>Used to set the border width/thickness</td>
+                    <td><p class="code">border-width: 10px;</p></td>
+                </tr>
+                <tr>
+                    <td>border-style</td>
+                    <td>Used to set the style of the border (solid, dashed etc.)</td>
+                    <td><p class="code">border-style: solid;</p></td>
+                </tr>
+                <tr>
+                    <td>border-color</td>
+                    <td>Used to set the color of the border</td>
+                    <td><p class="code">border-color: red;</p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    font-family: Helvetica;
+}
+
+body{
+    background-color: lightgray;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 0px 10px;
+}
+
+.code{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    line-height: 1.5;
+    font-family: "Space Mono", sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li{
+    display: inline;
+}
+  
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
